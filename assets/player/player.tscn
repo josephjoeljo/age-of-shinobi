@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://dybestnh0qgnl"]
+
+[ext_resource type="Script" path="res://assets/player/player.gd" id="1_i2tuo"]
+[ext_resource type="SpriteFrames" uid="uid://ce4v4085s6tx" path="res://assets/player/male-base/dark/animations.tres" id="2_m4r5e"]
+[ext_resource type="Script" path="res://assets/player/looping.gd" id="3_wpeu2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_id1j0"]
+size = Vector2(24, 54)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_i2tuo")
+speed = 300
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, 1)
+sprite_frames = ExtResource("2_m4r5e")
+animation = &"idle_down"
+script = ExtResource("3_wpeu2")
+
+[node name="BodyCollision" type="CollisionShape2D" parent="."]
+position = Vector2(0, 3)
+shape = SubResource("RectangleShape2D_id1j0")

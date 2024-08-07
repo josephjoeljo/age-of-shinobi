@@ -1,0 +1,24 @@
+[gd_scene load_steps=6 format=3 uid="uid://uuviynxd37r"]
+
+[ext_resource type="PackedScene" uid="uid://dybestnh0qgnl" path="res://assets/player/player.tscn" id="1_b4rmr"]
+[ext_resource type="PackedScene" uid="uid://c26pcv1tq1n6d" path="res://assets/trees/round_tree/round_tree.tscn" id="2_aeh77"]
+[ext_resource type="PackedScene" uid="uid://dq6uwktqf5dfe" path="res://assets/trees/large_tree/large_tree.tscn" id="3_kr5lf"]
+[ext_resource type="PackedScene" uid="uid://b55dron25nxo8" path="res://assets/trees/tree_stump/tree_stump.tscn" id="4_2oy7l"]
+[ext_resource type="PackedScene" uid="uid://c2fj47reu1ic5" path="res://assets/trees/small_tree/small_pine_tree.tscn" id="5_aq3lw"]
+
+[node name="World" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_b4rmr")]
+scale = Vector2(3, 3)
+
+[node name="RoundTree" parent="." instance=ExtResource("2_aeh77")]
+position = Vector2(95, -260)
+
+[node name="LargeTree" parent="." instance=ExtResource("3_kr5lf")]
+position = Vector2(-676, -764)
+
+[node name="TreeStump" parent="." instance=ExtResource("4_2oy7l")]
+position = Vector2(-620, 269)
+
+[node name="SmallPineTree" parent="." instance=ExtResource("5_aq3lw")]
+position = Vector2(-296, -350)

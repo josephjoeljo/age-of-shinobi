@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://c2fj47reu1ic5"]
+
+[ext_resource type="Texture2D" uid="uid://cbg12by1g2vac" path="res://assets/trees/small_tree/Small Pine Tree.png" id="1_bhjw1"]
+
+[node name="SmallPineTree" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
+texture = ExtResource("1_bhjw1")

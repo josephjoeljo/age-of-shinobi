@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://b55dron25nxo8"]
+
+[ext_resource type="Texture2D" uid="uid://bfjoiolnkgrk8" path="res://assets/trees/tree_stump/Tree Stump.png" id="1_y38bq"]
+
+[node name="TreeStump" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
+texture = ExtResource("1_y38bq")
