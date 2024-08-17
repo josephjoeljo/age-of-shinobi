@@ -3,7 +3,11 @@
 [ext_resource type="Texture2D" uid="uid://bfjoiolnkgrk8" path="res://assets/trees/tree_stump/Tree Stump.png" id="1_y38bq"]
 
 [node name="TreeStump" type="StaticBody2D"]
+position = Vector2(-7, -79)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(2, 2)
 texture = ExtResource("1_y38bq")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-8, 61, 16, 63, 24, 34, 52, 40, 58, 27, 44, 16, 54, 2, 54, -5, 29, -14, 12, -13, -26, -21, -35, -12, -40, -3, -34, 3, -53, 22, -51, 37, -29, 38, -20, 34, -13, 30)

@@ -3,7 +3,11 @@
 [ext_resource type="Texture2D" uid="uid://cbg12by1g2vac" path="res://assets/trees/small_tree/Small Pine Tree.png" id="1_bhjw1"]
 
 [node name="SmallPineTree" type="StaticBody2D"]
+position = Vector2(-1, -97)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(2, 2)
 texture = ExtResource("1_bhjw1")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-4, 97, 5, 97, 6, 93, 11, 90, 18, 88, 18, 84, 14, 79, 12, 73, -11, 74, -12, 79, -16, 88, -13, 94, -7, 93)

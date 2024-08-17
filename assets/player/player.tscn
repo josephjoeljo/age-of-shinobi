@@ -1,13 +1,22 @@
-[gd_scene load_steps=5 format=3 uid="uid://dybestnh0qgnl"]
+[gd_scene load_steps=6 format=3 uid="uid://dybestnh0qgnl"]
 
 [ext_resource type="Script" path="res://assets/player/player.gd" id="1_i2tuo"]
 [ext_resource type="SpriteFrames" uid="uid://ce4v4085s6tx" path="res://assets/player/male-base/dark/animations.tres" id="2_m4r5e"]
-[ext_resource type="Script" path="res://assets/player/looping.gd" id="3_wpeu2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_id1j0"]
-size = Vector2(24, 54)
+size = Vector2(24, 16)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jj3r3"]
+radius = 8.0
+height = 20.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_loex1"]
+size = Vector2(24, 26)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+y_sort_enabled = true
+position = Vector2(0, -60)
+scale = Vector2(2, 2)
 script = ExtResource("1_i2tuo")
 speed = 300
 
@@ -17,8 +26,17 @@ speed = 300
 position = Vector2(0, 1)
 sprite_frames = ExtResource("2_m4r5e")
 animation = &"idle_down"
-script = ExtResource("3_wpeu2")
 
-[node name="BodyCollision" type="CollisionShape2D" parent="."]
-position = Vector2(0, 3)
+[node name="FeetCollision" type="CollisionShape2D" parent="."]
+position = Vector2(0, 22)
 shape = SubResource("RectangleShape2D_id1j0")
+
+[node name="HeadCollision" type="CollisionShape2D" parent="."]
+position = Vector2(0, -16)
+shape = SubResource("CapsuleShape2D_jj3r3")
+disabled = true
+
+[node name="TorsoCollision" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_loex1")
+disabled = true

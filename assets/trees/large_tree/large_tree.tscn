@@ -3,7 +3,13 @@
 [ext_resource type="Texture2D" uid="uid://cuq21vqlctyak" path="res://assets/trees/large_tree/Large Tree.png" id="1_b5k4c"]
 
 [node name="LargeTree" type="StaticBody2D"]
+position = Vector2(0, -164)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(14, -329)
 scale = Vector2(3, 3)
 texture = ExtResource("1_b5k4c")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(14, -329)
+polygon = PackedVector2Array(-11, 487, 1, 477, 4, 432, 5, 418, 26, 433, 38, 445, 52, 446, 73, 462, 100, 471, 121, 470, 137, 451, 131, 434, 116, 409, 87, 373, 113, 367, 135, 349, 94, 306, 54, 283, 46, 265, -13, 283, -78, 263, -132, 283, -142, 301, -129, 325, -117, 326, -187, 401, -175, 419, -147, 417, -96, 398, -114, 461, -121, 494, -116, 511, -85, 511, -23, 466, -20, 488)

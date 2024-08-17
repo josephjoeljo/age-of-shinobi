@@ -1,0 +1,12 @@
+[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://bml237womx1x7"]
+
+[ext_resource type="Texture2D" uid="uid://dxaqohpjndnwf" path="res://assets/foliage/grass_base.png" id="1_56w7p"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vrevo"]
+texture = ExtResource("1_56w7p")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[resource]
+tile_size = Vector2i(64, 64)
+sources/0 = SubResource("TileSetAtlasSource_vrevo")
