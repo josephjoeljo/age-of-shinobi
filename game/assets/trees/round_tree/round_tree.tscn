@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://c26pcv1tq1n6d"]
+
+[ext_resource type="Texture2D" uid="uid://dk3sdb28m3bk7" path="res://assets/trees/round_tree/Round Tree.png" id="1_w1gwg"]
+
+[node name="RoundTree" type="StaticBody2D"]
+position = Vector2(-4, -226)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-3, -172)
+scale = Vector2(3, 3)
+texture = ExtResource("1_w1gwg")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(-3, -55)
+scale = Vector2(1.9893, 2.00576)
+build_mode = 1
+polygon = PackedVector2Array(-13.5726, 45.3693, -22.1183, 48.8593, -27.6479, 54.3435, -27.6479, 59.3291, -21.6156, 64.3148, -30.6641, 73.7875, -32.1721, 85.753, -29.156, 91.7358, -23.6264, 94.2286, -20.6103, 95.2257, -14.0753, 92.7329, -9.04841, 86.2516, -7.54034, 89.7415, -12.5672, 97.7186, -15.0807, 103.701, -15.5834, 110.183, -12.0645, 113.174, -1.50807, 111.18, 4.5242, 116.165, 9.04841, 111.18, 13.0699, 100.211, 16.5887, 90.7387, 20.6103, 96.2229, 27.1452, 96.2229, 42.7286, 89.7415, 43.2313, 81.266, 34.1829, 74.7846, 38.7071, 68.3033, 33.6802, 63.3176, 23.6264, 47.8622, 4.5242, 42.378)

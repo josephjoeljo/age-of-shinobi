@@ -1,0 +1,11 @@
+{
+    "python-envs.defaultEnvManager": "ms-python.python:conda",
+    "python-envs.defaultPackageManager": "ms-python.python:conda",
+    "python-envs.pythonProjects": [],
+    "cSpell.words": [
+        "cooldown",
+        "elif",
+        "onready"
+    ],
+    "godotTools.editorPath.godot4": "/Applications/godot.app"
+}

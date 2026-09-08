@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://bgk5wx5ttps44"]
+
+[ext_resource type="Script" uid="uid://bxbs1jnlwacaw" path="res://src/scripts/systems/ai/behavior_tree/templates/prey_herd_bt.gd" id="1_kff4n"]
+
+[node name="PreyHerdBt" type="Node" unique_id=1010211809]
+script = ExtResource("1_kff4n")

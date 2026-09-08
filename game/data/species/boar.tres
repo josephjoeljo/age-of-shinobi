@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="SpeciesDefinition" format=3 uid="uid://cqt11lk7jkbn6"]
+
+[ext_resource type="Script" uid="uid://ktvy7ki0pdrw" path="res://src/scripts/species_definition.gd" id="1_mrrl7"]
+[ext_resource type="PackedScene" uid="uid://bgk5wx5ttps44" path="res://src/scripts/wildlife/prey_herd_bt.tscn" id="1_qniry"]
+[ext_resource type="PackedScene" uid="uid://46o1ab024bel" path="res://assets/wildlife/boar/boar.tscn" id="2_ymdnw"]
+
+[resource]
+script = ExtResource("1_mrrl7")
+species_id = "boar"
+display_name = "Wild Boar"
+category = 1
+behavior_tree = ExtResource("1_qniry")
+reaction_time_min = 0.2
+reaction_time_max = 0.35
+decision_interval = 0.25
+vision_range = 80.0
+vision_angle = 100.0
+hearing_range = 60.0
+base_speed = 70.0
+sprint_speed = 130.0
+sprint_stamina_cost = 12.0
+separation_weight = 1.0
+alignment_weight = 0.8
+cohesion_weight = 1.2
+separation_radius = 25.0
+neighbor_radius = 60.0
+herd_type = 1
+min_pack_size_for_aggression = 99
+base_health = 120.0
+base_damage = 20.0
+attack_range = 15.0
+attack_cooldown = 1.5
+flee_health_threshold = 0.5
+aggression = 0.2
+panic_threshold = 0.5
+danger_radius = 80.0
+chase_range = 0.0
+curiosity = 0.2
+pack_loyalty = 0.7
+passive_heal_rate = 1.5
+threat_decay_rate = 0.15
+visual_scene = ExtResource("2_ymdnw")
+scar_locations = Array[String](["flank", "shoulder", "face"])
+metadata/_custom_type_script = "uid://ktvy7ki0pdrw"
